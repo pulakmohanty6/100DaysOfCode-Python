@@ -1,0 +1,16 @@
+# Today I learned how to define functions and use while loops, applying both concepts in Reeborg’s World. I completed several challenges, finishing with the maze-solving task—here’s my solution to it.
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+while not at_goal():
+    if right_is_clear():
+       turn_right()
+       move()
+    elif front_is_clear():
+        move()
+    else: 
+        turn_left()
+        
